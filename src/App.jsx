@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { useTranslation } from 'react-i18next';
+import Nav from './components/navbar';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div className="App">
+      < Nav/>
     <div className='photo'>
       <img className="image" src="./img/me.jpeg" alt="perfil"></img>
     </div>
