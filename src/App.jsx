@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       < Nav/>
     <div className='photo'>
-      <img className="image" src="./img/me.jpeg" alt="perfil"></img>
+      <img className="image" src="./karla.jpeg" alt="perfil"></img>
     </div>
     <div className='name'>
       <h1>{t("name")}</h1>
@@ -30,7 +30,7 @@ function App() {
     </div>
     <div className='tecnologies'>
       <p>{t("tecnologies")}</p>
-      <img className="picture" src="./img/redes.png" alt="redes"></img>
+     
     </div>
   </div>
   )
