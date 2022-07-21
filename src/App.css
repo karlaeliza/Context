@@ -1,41 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  color: whitesmoke;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+body {
+  background-color: #080808;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  user-select: none;
+  margin-left: 10vw;
+  height: 100px;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1B1B1B;
+  box-shadow: 0px 0px 2px #ababab;
+  border-radius: 0 0 10px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.selection {
+  font-size: 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  padding: 50px;
 }
 
-.card {
-  padding: 2em;
+.selection2 {
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  padding: 50px;
 }
 
-.read-the-docs {
-  color: #888;
+.selection a, 
+.selection2 a {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.selection a:hover, 
+.selection2 a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.selection a:link,
+.selection a:visited, 
+.selection2 a:visited, 
+.selection2 a:link {
+  color: whitesmoke;
+  outline: transparent;
+  text-decoration: none;
+}
+
+.animation {
+  display: inline-block;
+  position: relative;
+}
+
+.animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.image {
+  border-radius: 50%;
+  width: 400px;
+  box-shadow: -1px 0 5px #ababab;
+}
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #3F8E00;
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  font-size: 1.8rem;
+  border-color: #5ac502;
+  box-shadow: 0 0 20px #3F8E00;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px #ababab;
+  transition: all 0.3s ease-in-out;
 }
