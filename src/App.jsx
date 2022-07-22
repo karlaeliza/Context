@@ -9,29 +9,56 @@ function App() {
 
   return (
     <div className="App">
-      < Nav/>
-    <div className='photo'>
-      <img className="image" src="./karla.jpeg" alt="perfil"></img>
-    </div>
-    <div className='name'>
-      <h1>{t("name")}</h1>
-    </div>
-    <div className='information'>
-      <p>{t("information1")}</p>
-      <p>{t("information2")}</p>
-    </div>
-    <div className='button'>
-      <div className="btn-group">
-        <button onClick={() => setCount((count) => count + 1)}>{t("button1")} </button>
-      </div>
-      <div>
-        <p>{t("button2")} {count}</p>
-      </div>
-    </div>
-    <div className='tecnologies'>
-      <p>{t("tecnologies")}</p>
-     
-    </div>
+
+      <Nav/>
+
+        <div className='container'>
+
+          <div>
+        
+            <div className='name'>
+
+              <h1>{t("name")}</h1>
+
+            </div>
+          
+            <div className='information'>
+
+              <p>{t("information1")}</p>
+              <p>{t("information2")}</p>
+
+            </div>
+          
+            <button className='button' onClick={() => setCount((count) => count + 1)}>
+            
+              {t("button1")}
+
+            </button>
+
+            <div className='count'>
+
+              <p>{t("button2")} {count}</p>
+
+            </div>
+
+          </div>
+        
+          <div className='photo'>
+
+            <img className="image" src="./karla.jpeg" alt="perfil" />
+
+          </div>
+
+        </div>
+
+        <div className='tecnologies'>
+
+          <p>{t("tecnologies")}</p>
+
+          <img className='tech' src="./tech.png" alt="perfil" />
+      
+        </div>
+      
   </div>
   )
 }
